@@ -42,17 +42,12 @@ function clickLeft() {
 			position = slides.length - 1
 		}
 
-		console.log(position)
-
 		const contentImg = `./assets/images/slideshow/${imgName[position]}`
 		img.setAttribute("src", contentImg)
 
 		bannerTxt.innerHTML = tagLine[position]
 
 		dotClick()
-
-		console.log("Vous avez cliqué sur la flèche de gauche")
-
 	})
 }
 
@@ -71,9 +66,6 @@ function clickRight() {
 		bannerTxt.innerHTML = tagLine[position]
 
 		dotClick()
-
-		console.log("Vous avez cliqué sur la flèche de droite")
-
 	})
 }
 
